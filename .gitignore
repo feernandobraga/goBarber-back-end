@@ -4,3 +4,4 @@ node_modules
 tmp/uploads
 .vscode
 coverage
+ormconfig.json.bak

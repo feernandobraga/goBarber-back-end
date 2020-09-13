@@ -19,8 +19,11 @@ The back-end was developed with **NodeJS**, **Express**, and **Typescript**. It 
   - Redis (for caching)
 - Docker
 - Authentication via JWT
-- File Uploads
+- File Uploads and Storage
+  - AWS S3
+  - Local Storage
 - Domain Driven Design (DDD)
+- Dependency Injection with Tsyringe
 - Email Services
 - Debugging
 - Testing with Jest
@@ -28,6 +31,12 @@ The back-end was developed with **NodeJS**, **Express**, and **Typescript**. It 
 - CI/CD
 
 # Installation
+
+To run the application you will need:
+
+- [Git](https://git-scm.com)
+- [Node](https://nodejs.org/)
+- [Yarn](https://yarnpkg.com/)
 
 After cloning the repository, navigate to the project's folder and run
 
@@ -50,6 +59,8 @@ Next, you will need to create three docker containers that are responsible for h
   ```
   docker run --name redis -p 6379:6379 -d -t redis:alpine
   ```
+
+Next, you will need to rename the file .env.example to .env
 
 With the containers running we are ready to start the server. At the root folder of the project run:
 
