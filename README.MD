@@ -27,6 +27,36 @@ The back-end was developed with **NodeJS**, **Express**, and **Typescript**. It 
 - Deployment
 - CI/CD
 
+# Installation
+
+After cloning the repository, navigate to the project's folder and run
+
+```
+yarn
+```
+
+This will download and install all dependencies required to run the application.
+Next, you will need to create three docker containers that are responsible for hosting PostgreSQL, MongoDB and Redis.
+
+- PostgreSQL
+  ```
+  docker run --name gostack_postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+  ```
+- MongoDB
+  ```
+  docker run --name mongodb -p 27017:27017 -d -t mongo
+  ```
+- Redis
+  ```
+  docker run --name redis -p 6379:6379 -d -t redis:alpine
+  ```
+
+With the containers running we are ready to start the server. At the root folder of the project run:
+
+```
+yarn dev:server
+```
+
 # Repositories
 
 Below are the links to the other parts of the application
