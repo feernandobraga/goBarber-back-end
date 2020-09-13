@@ -74,6 +74,6 @@ Below are the links to the other parts of the application
 
 [Back-end] https://github.com/feernandobraga/goBarber-back-end
 
-[Front-end] http://
+[Front-end] https://github.com/feernandobraga/goBarber-front-end
 
-[Mobile] http://
+[Mobile] https://github.com/feernandobraga/goBarber-Mobile
